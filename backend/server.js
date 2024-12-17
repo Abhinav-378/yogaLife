@@ -4,6 +4,7 @@ const cors = require('cors');
 const connectToDb = require('./config/db');
 
 const classRoutes = require('./routes/classRoutes');
+const contactRoutes = require('./routes/contactRoutes');
 
 // Initialize Express
 const app = express();
@@ -19,7 +20,7 @@ app.use(express.urlencoded({ extended: true })); // For URL-encoded payloads
 
 // Routes
 app.use('/api/classes', classRoutes);
-
+app.use('/api/contact', contactRoutes);
 // Start Server
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
