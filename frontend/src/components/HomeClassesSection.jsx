@@ -41,6 +41,7 @@ function HomeClassesSection() {
               img={batch.image}
               price={batch.price}
               schedule={batch.schedule}
+              batchType={batch.batchType}
             />
           ))
         ) : (
@@ -60,6 +61,7 @@ function HomeClassesSection() {
               img={batch.image}
               price={batch.price}
               schedule={batch.schedule}
+              batchType={batch.batchType}
             />
           ))
         ) : (
